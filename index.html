@@ -1,8 +1,16 @@
 ---
 layout: page
-description: "「离开世界之前 一切都是过程」"
+description: "福州大学 2024 级计算机科学与技术专业本科生"
 ---
 
+<div class="zh post-container">
+    {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
+    {{ about_zh | markdownify }}
+</div>
+
+{% if paginator.posts.size > 0 %}
+<hr>
+<h2>学习记录</h2>
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -28,6 +36,7 @@ description: "「离开世界之前 一切都是过程」"
 </div>
 <hr>
 {% endfor %}
+{% endif %}
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}

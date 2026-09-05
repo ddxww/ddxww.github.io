@@ -1,7 +1,7 @@
 {
-  "name": "Hux Blog",
-  "short_name": "Hux Blog",
-  "description": "About an engineer & designer who loves web.",
+  "name": "丁晓炜的个人主页",
+  "short_name": "丁晓炜",
+  "description": "福州大学本科生个人主页",
   "icons": [{
     "src": "icons/128.png",
     "sizes": "128x128",

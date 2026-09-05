@@ -1,61 +1,68 @@
-Hey，我是黄玄（a.k.a. Hux, _@huxpro_），一个略懂计算机科学与艺术的斜杆不动青年，自诩是一个[广院](https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E4%BC%A0%E5%AA%92%E5%A4%A7%E5%AD%A6)数字媒体艺术系与 RIT 计算机科学系（师从 [Prof. Matthew Fluet](https://www.cs.rit.edu/~mtf/) 专攻编程语言）杂交出来的[黑客与画家](https://book.douban.com/subject/6021440/)。
+# 你好，我是丁晓炜
 
-现为 <del>Facebook</del> Meta 签约软件工程师，就职于开源技术<del>网红</del>团队 [React](https://beta.reactjs.org/community/meet-the-team#react-core)，曾参与 [Hermes JavaScript 引擎](https://hermesengine.dev/)，[ReasonML](https://reasonml.github.io/) (现 [ReScript](https://rescript-lang.org/))，以及 [Reality Labs](https://tech.fb.com/ar-vr/) 某保密项目等。在国内期间，曾被招募为阿里巴巴 · [阿里旅行（飞猪）](http://alitrip.com)· 前端工程师、微影时代 · 微票儿 · 前端基础设施工程团队负责人、[饿了么](https://ele.me/) · 大前端团队 · [PWA 顾问](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509) 等。
+我是福州大学计算机与大数据学院计算机科学与技术专业 2024 级本科生，目前正在学习软件工程，并通过课程实践、项目和算法练习提高自己的编程能力。
 
+我对 **Python、数据分析、机器学习、深度学习和自然语言处理** 比较感兴趣。相比只阅读教材，我更喜欢通过编写程序和完成实际任务理解知识。
 
-目前的物理活动范围主要在美帝纽约与硅谷，也想当个数字游<del>民</del>侠。虚拟分身日常出没于[微博](https://weibo.com/huxpro)、[知乎](https://www.zhihu.com/people/huxpro/pins/posts)、[B站](https://space.bilibili.com/43271611)、[Instagram](https://www.instagram.com/huxpro/)、[推特](https://twitter.com/Huxpro/)、[Github](https://github.com/huxpro) 等。
+## 个人链接
 
+- [GitHub：ddxww](https://github.com/ddxww)
+- [Kaggle：dddddal](https://www.kaggle.com/dddddal)
+- [力扣：al](https://leetcode.cn/u/dc26e73Uzl/)
+- [Codeforces：alalalddd](https://codeforces.com/profile/alalalddd)
 
-##### 技术演讲
+## 技能与学习经历
 
-- [我的大前端世界观][20] · [FEDAY](https://fequan.com/2023/) · 2023
-- [前端已死，前端永生][21] · [掘金年度技术演讲](https://juejin.cn/meetings/talk2023) · 2023
-- [React 国情咨文 2022][13] · 第七届中国开源年会 · 2023
-- [React Labs: What We've Been Working On – June 2022][12] · React Blog
-- [React Without Memo][11] · [React Conf 2021](https://conf.reactjs.org/)
-- [Toward Hermes being the Default][11] · React Native Blog · 2021
-- React Native 0.64 with Hermes for iOS · [The RN Show Podcast Ep #5](https://www.callstack.com/podcast-react-native-show) · 2021
-- [Upgrading to Progressive Web Apps][9] · [Youtube](https://www.youtube.com/watch?v=RWzMF-1fjJ8&t=1s) · [JSConf CN 上海 2017](http://2017.jsconf.cn/)
-- Building Progressive Web Apps · [CSDI 广州 2017](http://www.csdisummit.com/)
-- The State of Progressive Web App · GDG IO Redux 北京 2017
-- 炒冷饭 · PWA 到底是个什么玩意？· Baidu HQ 北京 2017
-- [Service Worker 101][5] · GDG DevFest 北京 2016
-- [Progressive Web App，复兴序章][4] · [QCon 上海 2016](http://2016.qconshanghai.com/presentation/3111)
-- Progressive Web App 之我见 · GDG IO Redux 北京 2016
-- [CSS Still Sucks 2015][2] · 2015
-- [JavaScript 模块化七日谈][1] · 2015
+| 类别 | 学习与实践情况 |
+| :--- | :--- |
+| 编程语言 | 使用过 Python、C 和 C++ |
+| 数据分析 | 较熟悉 Pandas，能够完成数据读取、清洗、转换和基础分析 |
+| 机器学习 | 使用过 Scikit-learn，了解分类、特征处理、交叉验证和参数搜索 |
+| 深度学习 | 使用过 PyTorch，完成过全连接神经网络和卷积神经网络实践 |
+| 自然语言处理 | 学习过 RNN、LSTM、GRU、Attention 和 Transformer |
+| 开发工具 | 使用过 PyCharm、VS Code、Git、GitHub 和 Kaggle |
 
+我通过尚硅谷课程自学了机器学习、深度学习和自然语言处理，并跟随课程完成了多个代码实践。目前能够理解基础的数据处理、模型定义、训练和评估流程，也能够通过查阅资料解决一些常见问题。
 
-##### 媒体关注
+## 项目与实践
 
-- [Hux 黄玄：从全局视角看 React 生态][14] · 直播 · 图灵 8 点半 · 2023
-- [2022 中国开源先锋 33 人][18] · SegmentFault · 2023
-- [React 黄玄：不懂艺术的 B-Boy 不是 Swag 的程序员][16] · Gitee 封面人物 · 2022
-- [在硅谷当程序员是怎样的体验？][17] · 知乎[《我所向往的职业啊》](https://movie.douban.com/subject/36015036/) · 2022
+### Kaggle 泰坦尼克号生存预测
 
-<!--
-- [掘金 AMA：我是前端娱乐圈的老人 & Facebook 实习生 -- 黄玄][19] · 2018
--->
+使用 Python、Pandas 和 Scikit-learn 处理乘客数据，完成缺失值处理、特征转换、分类模型训练和生存结果预测，了解了 Kaggle 项目的基本流程。
 
+### 手写数字识别
 
-[1]: //huangxuan.me/2015/07/09/js-module-7day/
-[2]: //huangxuan.me/2015/12/28/css-sucks-2015/
-[3]: //huangxuan.me/2016/06/05/pwa-in-my-pov/
-[4]: //huangxuan.me/2016/10/20/pwa-qcon2016/
-[5]: //huangxuan.me/2016/11/20/sw-101-gdgdf/
-[6]: https://yanshuo.io/assets/player/?deck=58ac8598b123db0067292f92 "PWA Rehashing"
-[7]: https://yanshuo.io/assets/player/?deck=593ad6fbfe88c2006a0a0d6d "The State of PWA"
-[8]: https://yanshuo.io/assets/player/?deck=594d673d570c357d0698a950 "Building PWA"
-[9]: //huangxuan.me/jsconfcn2017/
-[10]: https://reactnative.dev/blog/2021/10/26/toward-hermes-being-the-default
-[11]: https://youtu.be/lGEMwh32soc
-[12]: https://reactjs.org/blog/2022/06/15/react-labs-what-we-have-been-working-on-june-2022.html
-[13]: https://www.bilibili.com/video/BV1LY411Q7hC/?spm_id_from=333.999.0.0
-[14]: https://appycyfaqcq1951.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/video/v_64477dbfe4b0cf39e6c11d2a
-[15]: https://segmentfault.com/a/1190000043208486
-[16]: https://gitee.com/gitee-stars/30
-[17]: https://www.zhihu.com/zvideo/1542577108190068737?page=ogv
-[18]: https://segmentfault.com/a/1190000043208486
-[19]: https://juejin.cn/post/6844903750155419655
-[20]: https://www.bilibili.com/video/BV1SC4y1c7ju/
-[21]: https://www.bilibili.com/video/BV1uz421d7Ch/
+使用 NumPy 实现两层神经网络，通过前向传播、损失计算和梯度更新完成手写数字分类，加深了对神经网络训练过程的理解。
+
+### Fashion-MNIST 服装识别
+
+使用 PyTorch 构建卷积神经网络，对 Fashion-MNIST 服装图片进行分类，实践了数据加载、模型构建、训练和测试流程。
+
+### 心脏病风险预测
+
+使用 Pandas 和 Scikit-learn 处理心脏病数据，并使用 KNN、逻辑回归、交叉验证和网格搜索完成分类预测。
+
+### 基于 Transformer 的中英翻译器
+
+使用 PyTorch 构建包含词嵌入、位置编码、编码器和解码器的 Transformer 模型，完成中英文翻译训练，并接触了模型保存、TensorBoard 训练记录和 BLEU 评价方法。
+
+### GitHub Pages 个人主页
+
+使用 Jekyll、Markdown 和 YAML 搭建当前个人主页，完成站点配置、个人介绍和 GitHub Pages 部署。
+
+## 算法练习
+
+我通过力扣和 Codeforces 持续练习算法与数据结构，接触过数组、二分查找、回溯、二叉树、广度优先搜索、深度优先搜索和动态规划等内容。
+
+- 力扣：截至 2026 年 9 月已解答 576 题，其中使用 Pandas 解答 60 题
+- Codeforces：参加过算法竞赛练习，目前 Rating 为 1014
+
+## 自我评估
+
+我的学习目前仍以课程实践为主。在独立分析复杂问题、选择模型、调整参数、设计完整项目、自动化测试和规范组织代码方面，我还需要继续积累经验。
+
+## 未来三年规划
+
+1. **巩固基础：** 认真学习数据结构、数据库、操作系统、计算机网络和软件工程等课程，养成良好的代码规范和版本管理习惯。
+2. **积累实践：** 继续学习人工智能相关知识，完成一至两个较完整的项目，提高独立解决问题的能力。
+3. **明确方向：** 根据实际情况确定考研或就业方向，针对目标做好准备，并逐步形成自己的技术方向。
