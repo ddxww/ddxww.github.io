@@ -65,6 +65,20 @@ body { background: var(--canvas); color: var(--ink); }
 .empty-state { padding: 30px; color: var(--muted); background: var(--paper); border: 1px solid var(--line); }
 .home-pager { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; color: var(--muted); font-size: 13px; }
 
+.archive-summary { display: flex; align-items: end; justify-content: space-between; padding: 0 0 22px; border-bottom: 1px solid var(--line); }
+.archive-summary h2 { margin: 5px 0 0; font-size: 28px; letter-spacing: 0; }
+.archive-summary strong { color: var(--muted); font-size: 14px; }
+.archive-year { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 28px; padding: 30px 0; border-bottom: 1px solid var(--line); }
+.archive-year > h2 { margin: 0; color: var(--accent); font-size: 25px; letter-spacing: 0; }
+.archive-year-content > h3 { margin: 2px 0 10px; color: var(--muted); font-size: 14px; letter-spacing: 0; }
+.archive-entry { display: grid; grid-template-columns: 55px minmax(0, 1fr); gap: 14px; padding: 14px 0; border-top: 1px solid #edf0f2; }
+.archive-entry time { padding-top: 3px; color: var(--muted); font-size: 13px; }
+.archive-entry h4 { margin: 0; font-size: 18px; letter-spacing: 0; }
+.archive-entry h4 a { color: var(--ink); }
+.archive-entry h4 a:hover { color: var(--accent); text-decoration: none; }
+.archive-entry p { margin: 5px 0 0; color: var(--muted); font-size: 13px; }
+.archive-entry p span { margin-left: 8px; color: var(--accent); }
+
 @media (max-width: 767px) {
   .intro-header .site-heading { padding: 90px 16px 55px; }
   .intro-header .site-heading h1 { font-size: 34px; }
@@ -84,6 +98,10 @@ body { background: var(--canvas); color: var(--ink); }
   .content-tabs { margin: 20px 0 26px; }
   .post-card { padding: 20px; }
   .post-card h3 { font-size: 20px; }
+  .archive-summary h2 { font-size: 24px; }
+  .archive-year { grid-template-columns: 1fr; gap: 12px; padding: 25px 0; }
+  .archive-year > h2 { font-size: 22px; }
+  .archive-entry { grid-template-columns: 48px minmax(0, 1fr); }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
