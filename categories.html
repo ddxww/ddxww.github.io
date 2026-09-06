@@ -1,0 +1,23 @@
+---
+layout: page
+title: "分类"
+description: "按主题浏览学习记录"
+header-img: "img/home-bg.jpg"
+header-mask: 0.3
+---
+
+<div class="post-container">
+  <p>这里按照文章主题整理学习记录。发布日志时，在文章头部添加 <code>categories</code> 字段即可自动归类。</p>
+  {% if site.categories.size > 0 %}
+  {% for category in site.categories %}
+  <h2>{{ category[0] }}</h2>
+  <ul>
+    {% for post in category[1] %}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a>（{{ post.date | date: "%Y-%m-%d" }}）</li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+  {% else %}
+  <p>目前还没有分类文章，之后的学习日志会显示在这里。</p>
+  {% endif %}
+</div>
