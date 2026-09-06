@@ -27,29 +27,14 @@
 
 ## 项目与实践
 
-### Kaggle 泰坦尼克号生存预测
-
-使用 Python、Pandas 和 Scikit-learn 处理乘客数据，完成缺失值处理、特征转换、分类模型训练和生存结果预测，了解了 Kaggle 项目的基本流程。
-
-### 手写数字识别
-
-使用 NumPy 实现两层神经网络，通过前向传播、损失计算和梯度更新完成手写数字分类，加深了对神经网络训练过程的理解。
-
-### Fashion-MNIST 服装识别
-
-使用 PyTorch 构建卷积神经网络，对 Fashion-MNIST 服装图片进行分类，实践了数据加载、模型构建、训练和测试流程。
-
-### 心脏病风险预测
-
-使用 Pandas 和 Scikit-learn 处理心脏病数据，并使用 KNN、逻辑回归、交叉验证和网格搜索完成分类预测。
-
-### 基于 Transformer 的中英翻译器
-
-使用 PyTorch 构建包含词嵌入、位置编码、编码器和解码器的 Transformer 模型，完成中英文翻译训练，并接触了模型保存、TensorBoard 训练记录和 BLEU 评价方法。
-
-### GitHub Pages 个人主页
-
-使用 Jekyll、Markdown 和 YAML 搭建当前个人主页，完成站点配置、个人介绍和 GitHub Pages 部署。
+| 项目 | 实践内容 |
+| :--- | :--- |
+| **Kaggle 泰坦尼克号生存预测** | 使用 Python、Pandas 和 Scikit-learn 处理乘客数据，完成缺失值处理、特征转换、分类模型训练和生存结果预测，了解 Kaggle 项目的基本流程。 |
+| **手写数字识别** | 使用 NumPy 实现两层神经网络，通过前向传播、损失计算和梯度更新完成手写数字分类，加深对神经网络训练过程的理解。 |
+| **Fashion-MNIST 服装识别** | 使用 PyTorch 构建卷积神经网络，对 Fashion-MNIST 服装图片进行分类，实践数据加载、模型构建、训练和测试流程。 |
+| **心脏病风险预测** | 使用 Pandas 和 Scikit-learn 处理心脏病数据，并使用 KNN、逻辑回归、交叉验证和网格搜索完成分类预测。 |
+| **基于 Transformer 的中英翻译器** | 使用 PyTorch 构建包含词嵌入、位置编码、编码器和解码器的 Transformer 模型，完成中英文翻译训练，并接触模型保存、TensorBoard 训练记录和 BLEU 评价方法。 |
+| **GitHub Pages 个人主页** | 使用 Jekyll、Markdown 和 YAML 搭建当前个人主页，完成站点配置、个人介绍和 GitHub Pages 部署。 |
 
 ## 算法练习
 
