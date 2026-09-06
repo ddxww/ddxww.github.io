@@ -10,6 +10,11 @@
 - [Kaggle：dddddal](https://www.kaggle.com/dddddal)
 - [力扣：al](https://leetcode.cn/u/dc26e73Uzl/)
 - [Codeforces：alalalddd](https://codeforces.com/profile/alalalddd)
+- 邮箱：1797367614@qq.com
+
+### 微信联系
+
+![微信二维码](/img/wechat-qr.png)
 
 ## 技能与学习经历
 
