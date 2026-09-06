@@ -6,12 +6,19 @@
 <!-- hack iOS CSS :active style -->
 <body ontouchstart="">
 
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
     {% include nav.html %}
     {% include search.html %}
 
     {{ content }}
 
     {% include footer.html %}
+
+    <button class="back-to-top" type="button" aria-label="返回顶部" title="返回顶部">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    <script src="{{ '/js/site-interactions.js' | prepend: site.baseurl }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}" defer></script>
 
 
 <!-- Image to hack wechat -->

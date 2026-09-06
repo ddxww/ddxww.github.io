@@ -6,17 +6,35 @@ header-img: "img/home-bg.jpg"
 header-mask: 0.3
 ---
 
-<div class="post-container">
-  <p>这里按照文章主题整理学习记录。发布日志时，在文章头部添加 <code>categories</code> 字段即可自动归类。</p>
+<div class="post-container category-page">
+  <div class="category-overview">
+    <div><strong>{{ site.categories.size }}</strong><span>个分类</span></div>
+    <div><strong>{{ site.posts.size }}</strong><span>篇日志</span></div>
+  </div>
+  <p class="category-hint">选择一个分类查看其中的学习记录。</p>
   {% if site.categories.size > 0 %}
+  <div class="category-grid">
   {% for category in site.categories %}
-  <h2 id="{{ category[0] | slugify }}">{{ category[0] }}</h2>
-  <ul>
-    {% for post in category[1] %}
-    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a>（{{ post.date | date: "%Y-%m-%d" }}）</li>
-    {% endfor %}
-  </ul>
+  {% assign category_id = category[0] | slugify %}
+  <section class="category-card reveal-item" id="{{ category_id }}">
+    <button class="category-toggle" type="button" aria-expanded="false" aria-controls="category-posts-{{ forloop.index }}">
+      <span class="category-icon"><i class="fa fa-folder-open-o" aria-hidden="true"></i></span>
+      <span class="category-name">{{ category[0] }}</span>
+      <span class="category-total">{{ category[1].size }} 篇</span>
+      <i class="fa fa-chevron-down category-arrow" aria-hidden="true"></i>
+    </button>
+    <div class="category-posts" id="category-posts-{{ forloop.index }}" hidden>
+      {% for post in category[1] %}
+      <a href="{{ post.url | relative_url }}">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+        <span>{{ post.title }}</span>
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
   {% endfor %}
+  </div>
   {% else %}
   <p>目前还没有分类文章，之后的学习日志会显示在这里。</p>
   {% endif %}

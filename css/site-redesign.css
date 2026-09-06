@@ -219,3 +219,48 @@ html[data-theme="dark"] .navbar-custom.invert .navbar-toggle .icon-bar { backgro
   .entrance-profile { padding: 22px; }
   .entrance-footnote { padding-bottom: 18px; }
 }
+
+/* Category interactions and reading helpers */
+.scroll-progress { position: fixed; top: 0; left: 0; z-index: 1100; width: 100%; height: 3px; pointer-events: none; }
+.scroll-progress span { display: block; width: 0; height: 100%; background: var(--warm); transition: width .08s linear; }
+.back-to-top { position: fixed; right: 22px; bottom: 22px; z-index: 20; display: grid; width: 44px; height: 44px; padding: 0; place-items: center; color: #fff; background: var(--accent); border: 0; border-radius: 50%; box-shadow: 0 7px 18px rgba(31, 41, 51, .2); opacity: 0; visibility: hidden; transform: translateY(12px); transition: opacity .2s, visibility .2s, transform .2s, background-color .2s; }
+.back-to-top.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover, .back-to-top:focus { background: var(--accent-dark); outline: 2px solid var(--warm); outline-offset: 2px; }
+.category-overview { display: flex; gap: 14px; margin-bottom: 22px; }
+.category-overview > div { display: flex; min-width: 120px; align-items: baseline; gap: 7px; padding: 15px 18px; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; }
+.category-overview strong { color: var(--accent); font-size: 25px; }
+.category-overview span { color: var(--muted); font-size: 13px; }
+.category-hint { margin: 20px 0; color: var(--muted); font-size: 14px; }
+.category-grid { display: grid; gap: 13px; }
+.category-card { overflow: hidden; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; opacity: 0; transform: translateY(14px); transition: opacity .45s, transform .45s, border-color .2s, box-shadow .2s; }
+.category-card.is-revealed { opacity: 1; transform: translateY(0); }
+.category-card:hover { border-color: #9bc5c8; box-shadow: 0 7px 20px rgba(31, 41, 51, .07); }
+.category-toggle { display: grid; width: 100%; grid-template-columns: 42px minmax(0, 1fr) auto 20px; gap: 12px; align-items: center; padding: 18px 20px; color: var(--ink); text-align: left; background: transparent; border: 0; }
+.category-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: -3px; }
+.category-icon { display: grid; width: 38px; height: 38px; place-items: center; color: var(--accent); background: rgba(8, 126, 139, .1); border-radius: 5px; }
+.category-name { min-width: 0; font-size: 18px; font-weight: 700; }
+.category-total { color: var(--muted); font-size: 13px; }
+.category-arrow { color: var(--muted); transition: transform .25s; }
+.category-toggle[aria-expanded="true"] .category-arrow { transform: rotate(180deg); }
+.category-posts { padding: 0 20px 12px 74px; }
+.category-posts[hidden] { display: none; }
+.category-posts a { display: grid; grid-template-columns: 92px minmax(0, 1fr) 18px; gap: 12px; align-items: center; padding: 13px 0; color: var(--ink); border-top: 1px solid var(--line); font-size: 14px; }
+.category-posts a:hover { color: var(--accent); text-decoration: none; }
+.category-posts time { color: var(--muted); font-size: 12px; }
+.category-posts .fa-arrow-right { opacity: 0; transform: translateX(-5px); transition: opacity .2s, transform .2s; }
+.category-posts a:hover .fa-arrow-right { opacity: 1; transform: translateX(0); }
+html[data-theme="dark"] .category-card,
+html[data-theme="dark"] .category-overview > div { box-shadow: 0 5px 20px rgba(0, 0, 0, .18); }
+
+@media (max-width: 767px) {
+  .back-to-top { right: 15px; bottom: 15px; }
+  .category-overview > div { min-width: 0; flex: 1; padding: 12px 14px; }
+  .category-toggle { grid-template-columns: 38px minmax(0, 1fr) auto 16px; gap: 9px; padding: 15px; }
+  .category-posts { padding: 0 15px 10px; }
+  .category-posts a { grid-template-columns: 75px minmax(0, 1fr) 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+  .reveal-item { opacity: 1; transform: none; }
+}
