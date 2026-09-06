@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% include head.html %}
+<body class="landing-page" ontouchstart="">
+  {{ content }}
+  <script src="{{ '/js/theme-switch.js' | prepend: site.baseurl }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}" defer></script>
+</body>
+</html>

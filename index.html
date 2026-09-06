@@ -1,98 +1,51 @@
 ---
-layout: default
-title: "丁晓炜的个人主页"
-description: "记录学习、项目与成长"
-header-img: "img/sky-banner.png"
-header-mask: 0.35
+layout: landing
+title: "欢迎"
+description: "丁晓炜的个人主页入口"
 hide-in-nav: true
 ---
 
-<div class="sky-hero">
-  {% include intro-header.html type='page' %}
-  <div class="sky-wave sky-wave-back" aria-hidden="true"></div>
-  <div class="sky-wave sky-wave-front" aria-hidden="true"></div>
-</div>
+<main class="entrance" aria-label="个人主页入口">
+  <div class="entrance-shade" aria-hidden="true"></div>
+  <header class="entrance-nav">
+    <a class="entrance-brand" href="{{ '/' | relative_url }}">
+      <img src="{{ site.sidebar-avatar | relative_url }}" alt="">
+      <span>丁晓炜的个人主页</span>
+    </a>
+    <nav aria-label="快捷导航">
+      <a href="{{ '/home/' | relative_url }}">主页</a>
+      <a href="{{ '/archive/' | relative_url }}">归档</a>
+      <a href="{{ '/about/' | relative_url }}">关于我</a>
+      <span class="theme-switch">
+        <a href="javascript:void(0)" role="button" aria-label="切换深色模式" title="切换背景颜色"><i class="fa fa-moon-o" aria-hidden="true"></i></a>
+      </span>
+    </nav>
+  </header>
 
-<main class="home-shell container" aria-label="主页内容">
-  <div class="home-grid">
-    <aside class="profile-panel">
-      <a class="profile-avatar-link" href="{{ '/about/' | relative_url }}" aria-label="查看完整个人介绍">
-        <img class="profile-avatar" src="{{ site.sidebar-avatar | relative_url }}" alt="丁晓炜的头像">
-      </a>
-      <h2>丁晓炜</h2>
-      <p class="profile-role">福州大学 2024 级<br>计算机科学与技术专业本科生</p>
-      <div class="profile-links" aria-label="个人链接">
-        <a href="https://github.com/ddxww" target="_blank" rel="noopener"><i class="fa fa-github"></i><span>GitHub</span></a>
-        <a href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i><span>邮箱</span></a>
-        <a href="{{ '/img/wechat-qr.png' | relative_url }}" target="_blank"><i class="fa fa-weixin"></i><span>微信</span></a>
-        <a href="{{ '/img/qq-qr.png' | relative_url }}" target="_blank"><i class="fa fa-qq"></i><span>QQ</span></a>
-        <a href="{{ '/feed.xml' | relative_url }}" title="使用 RSS 阅读器订阅日志"><i class="fa fa-rss"></i><span>RSS 订阅</span></a>
+  <div class="entrance-content">
+    <section class="entrance-intro">
+      <span class="entrance-kicker">WELCOME TO MY SPACE</span>
+      <h1>丁晓炜的个人主页</h1>
+      <p class="entrance-quote">在持续学习中积累，在动手实践中成长。</p>
+      <div class="entrance-tags" aria-label="学习方向">
+        <span>Python</span><span>机器学习</span><span>自然语言处理</span><span>嵌入式系统</span>
       </div>
+      <a class="entrance-button" href="{{ '/home/' | relative_url }}">进入个人主页 <i class="fa fa-arrow-right"></i></a>
+    </section>
 
-      <section class="side-section">
-        <h3>日志分类</h3>
-        <div class="category-list">
-          {% for category in site.categories %}
-          <a href="{{ '/categories/' | relative_url }}#{{ category[0] | slugify }}">
-            <span>{{ category[0] }}</span><strong>{{ category[1].size }}</strong>
-          </a>
-          {% endfor %}
-        </div>
-      </section>
-    </aside>
-
-    <div class="home-content">
-      <section class="intro-summary">
-        <span class="section-kicker">ABOUT ME</span>
+    <section class="entrance-profile" aria-label="站点简介">
+      <img src="{{ site.sidebar-avatar | relative_url }}" alt="丁晓炜的头像">
+      <div>
         <h2>你好，我是丁晓炜</h2>
-        <p>我是福州大学计算机与大数据学院计算机科学与技术专业 2024 级本科生。目前正在学习软件工程、人工智能与嵌入式系统，并通过课程实践、项目和算法练习提高自己的编程能力。</p>
-        <p>我希望以保研为目标，争取更多学习与研究机会，并继续探索机器学习、自然语言处理和大模型方向。</p>
-        <div class="summary-actions">
-          <a class="primary-action" href="{{ '/about/' | relative_url }}">查看完整介绍 <i class="fa fa-arrow-right"></i></a>
-          <a href="https://github.com/ddxww/ddxww.github.io/tree/master/python_study" target="_blank" rel="noopener">浏览学习代码</a>
-        </div>
-      </section>
-
-      <nav class="content-tabs" aria-label="内容导航">
-        <a class="active" href="{{ '/' | relative_url }}">最新日志</a>
-        <a href="{{ '/logs/' | relative_url }}">全部日志</a>
-        <a href="{{ '/categories/' | relative_url }}">分类</a>
-        <a href="{{ '/archive/' | relative_url }}">归档</a>
-      </nav>
-
-      <section class="post-feed" aria-labelledby="latest-posts-title">
-        <div class="section-heading-row">
-          <div>
-            <span class="section-kicker">LEARNING LOG</span>
-            <h2 id="latest-posts-title">学习日志</h2>
-          </div>
-          <span class="post-count">{{ site.posts.size }} 篇</span>
-        </div>
-        {% if paginator.posts.size > 0 %}
-          {% for post in paginator.posts %}
-          <article class="post-card">
-            <div class="post-card-meta">
-              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-              {% for category in post.categories %}<span>{{ category }}</span>{% endfor %}
-            </div>
-            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            {% if post.subtitle %}<p class="post-subtitle">{{ post.subtitle }}</p>{% endif %}
-            <p>{{ post.content | strip_html | strip_newlines | truncate: 120 }}</p>
-            <a class="read-more" href="{{ post.url | relative_url }}">阅读全文 <i class="fa fa-arrow-right"></i></a>
-          </article>
-          {% endfor %}
-        {% else %}
-          <div class="empty-state">目前还没有学习日志。</div>
-        {% endif %}
-      </section>
-
-      {% if paginator.total_pages > 1 %}
-      <nav class="home-pager" aria-label="日志翻页">
-        {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">较新的日志</a>{% endif %}
-        <span>第 {{ paginator.page }} / {{ paginator.total_pages }} 页</span>
-        {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">更早的日志</a>{% endif %}
-      </nav>
-      {% endif %}
-    </div>
+        <p>福州大学计算机与大数据学院计算机科学与技术专业 2024 级本科生。</p>
+        <p>这里记录我的课程学习、人工智能实践、算法练习和成长过程。</p>
+      </div>
+      <div class="entrance-links">
+        <a href="{{ '/logs/' | relative_url }}">最新日志</a>
+        <a href="{{ '/categories/' | relative_url }}">文章分类</a>
+        <a href="{{ '/about/' | relative_url }}">了解更多</a>
+      </div>
+    </section>
   </div>
+  <p class="entrance-footnote">欢迎来到我的个人主页</p>
 </main>
