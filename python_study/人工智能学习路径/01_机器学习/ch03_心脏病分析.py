@@ -1,0 +1,84 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split,GridSearchCV
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import StandardScaler,OneHotEncoder
+from sklearn.neighbors import KNeighborsClassifier
+import joblib
+
+from topsis import weights
+
+heart_disease_date=pd.read_csv('heart_disease.csv')
+heart_disease_date.dropna(inplace=True)
+X=heart_disease_date.drop(columns='是否患有心脏病')
+y=heart_disease_date['是否患有心脏病']
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+#特征工程
+numerical_features=['年龄','静息血压','胆固醇','最大心率','运动后的ST下降','主血管数量']
+categorical_features=['胸痛类型','静息心电图结果','峰值ST段的斜率','地中海贫血']
+binary_features=['性别','空腹血糖','运动性心绞痛']
+
+#列转换器ColumnTransformer
+columnTransformer=ColumnTransformer(
+    transformers=[
+        ('num',StandardScaler(),numerical_features),
+        ('cat',OneHotEncoder(drop='first'),categorical_features),
+        ('bin','passthrough',binary_features),
+    ]
+)
+#预处理
+X_train=columnTransformer.fit_transform(X_train)
+X_test=columnTransformer.transform(X_test)
+
+# #创建模型
+# knn=KNeighborsClassifier(n_neighbors=3)
+#
+# #训练
+# knn.fit(X_train,y_train)
+#
+# #评估
+# score=knn.score(X_test,y_test)
+# print(score)
+#
+# #保存模型
+# joblib.dump(knn, 'knn_model')
+#
+# #加载模型
+# knn_model=joblib.load('knn_model')
+# y_pred=knn_model.predict(X_test[10:11])
+# print(f"预测类别:{y_pred},真实类别:{y_test[10]}")
+
+#交叉验证
+knn=KNeighborsClassifier()
+
+#定义网格搜索参数
+#param_grid：字典，`{参数名: [候选值列表]}`，会做全组合遍历
+param_grid={'n_neighbors':list(range(1,11)),'weights':['uniform','distance']}
+grid_search=GridSearchCV(estimator=knn,param_grid=param_grid,cv=10)
+grid_search_cv=grid_search.fit(X_train,y_train)
+results=pd.DataFrame(grid_search.cv_results_).to_string()
+print(results)
+#最佳模型和最佳得分
+print(grid_search_cv.best_estimator_)
+print(grid_search_cv.best_params_)
+print(grid_search_cv.best_score_)
+
+#使用最佳模型进行测试
+knn=grid_search_cv.best_estimator_
+print(knn.score(X_test,y_test))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
