@@ -6,11 +6,11 @@
 
 ## 个人链接
 
-- [GitHub：ddxww](https://github.com/ddxww)
-- [Kaggle：dddddal](https://www.kaggle.com/dddddal)
-- [力扣：al](https://leetcode.cn/u/dc26e73Uzl/)
-- [Codeforces：alalalddd](https://codeforces.com/profile/alalalddd)
-- 邮箱：1797367614@qq.com
+- <i class="fa fa-github fa-fw"></i> [GitHub：ddxww](https://github.com/ddxww)
+- <i class="fa fa-bar-chart fa-fw"></i> [Kaggle：dddddal](https://www.kaggle.com/dddddal)
+- <i class="fa fa-code fa-fw"></i> [力扣：al](https://leetcode.cn/u/dc26e73Uzl/)
+- <i class="fa fa-trophy fa-fw"></i> [Codeforces：alalalddd](https://codeforces.com/profile/alalalddd)
+- <i class="fa fa-envelope fa-fw"></i> [邮箱：1797367614@qq.com](mailto:1797367614@qq.com)
 
 ## 技能与学习经历
 
