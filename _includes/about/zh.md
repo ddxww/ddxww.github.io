@@ -14,6 +14,8 @@
 
 ## 技能与学习经历
 
+完整代码整理在：[Python 学习代码与人工智能学习路径](https://github.com/ddxww/ddxww.github.io/tree/master/python_study)
+
 | 类别 | 学习与实践情况 |
 | :--- | :--- |
 | 编程语言 | 使用过 Python、C 和 C++ |
