@@ -13,6 +13,14 @@ body { background: var(--canvas); color: var(--ink); }
 body, .intro-summary, .post-card, .content-tabs, .profile-links a, footer, table, th, td { transition: background-color .25s ease, color .25s ease, border-color .25s ease; }
 .theme-switch a { min-width: 50px; text-align: center; }
 .intro-header { margin-bottom: 0; }
+.sky-hero { position: relative; overflow: hidden; background: #75b9dd; }
+.sky-hero .intro-header { position: relative; z-index: 1; }
+.sky-wave { position: absolute; z-index: 2; right: -8%; bottom: -42px; left: -8%; height: 115px; pointer-events: none; border-radius: 50% 50% 0 0 / 100% 100% 0 0; background: rgba(255,255,255,.66); transform-origin: center bottom; }
+.sky-wave-back { bottom: -60px; opacity: .5; transform: rotate(-2deg) scaleX(1.08); animation: sky-wave-drift-back 15s ease-in-out infinite alternate; }
+.sky-wave-front { bottom: -76px; opacity: .8; transform: rotate(2deg) scaleX(1.12); animation: sky-wave-drift-front 11s ease-in-out infinite alternate; }
+@keyframes sky-wave-drift-back { from { transform: translateX(-2.5%) rotate(-2deg) scaleX(1.08); } to { transform: translateX(2.5%) rotate(1deg) scaleX(1.08); } }
+@keyframes sky-wave-drift-front { from { transform: translateX(2%) rotate(2deg) scaleX(1.12); } to { transform: translateX(-2%) rotate(-1deg) scaleX(1.12); } }
+@media (prefers-reduced-motion: reduce) { .sky-wave { animation: none; } }
 .intro-header .site-heading { padding: 112px 0 82px; }
 .intro-header .site-heading h1 { font-size: 48px; letter-spacing: 0; }
 .intro-header .site-heading .subheading { line-height: 1.6; }
